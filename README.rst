@@ -1,5 +1,27 @@
-Pointnet2/Pointnet++ PyTorch
+Bernardo's steps
 ============================
+
+Setup
+-----
+
+  ::
+    
+    # conda remove --name bjgbiesseck_Pointnet2_PyTorch_py37 --all
+    conda create --name bjgbiesseck_Pointnet2_PyTorch_py37 python=3.7 && \
+    conda activate bjgbiesseck_Pointnet2_PyTorch_py37 && \
+    conda install pytorch torchvision -c pytorch && \
+    
+    cd ~/GitHub && \
+    git clone https://github.com/biesseck/Pointnet2_PyTorch.git && \
+    cd Pointnet2_PyTorch && \
+    pip install -r requirements.txt && \
+    python setup.py build_ext --inplace && \
+    python setup.py install
+
+
+
+Pointnet2/Pointnet++ PyTorch (original repo)
+============================================
 
 
 **Project Status**: Unmaintained.  Due to finite time, I have no plans to update this code and I will not be responding to issues.
