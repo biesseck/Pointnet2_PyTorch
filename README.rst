@@ -18,6 +18,8 @@ Setup
     python setup.py build_ext --inplace && \
     python setup.py install && \
     pip install -e .
+    
+    # Download the file 'https://shapenet.cs.stanford.edu/media/modelnet40_normal_resampled.zip' and save to 'pointnet2/data'
 
 
 
