@@ -1,8 +1,8 @@
 Bernardo's steps
 ============================
 
-Setup
------
+Setup (Bernardo)
+----------------
 
   ::
     
@@ -19,7 +19,19 @@ Setup
     python setup.py install && \
     pip install -e .
     
-    # Download the file 'https://shapenet.cs.stanford.edu/media/modelnet40_normal_resampled.zip' and save to 'pointnet2/data'
+    
+Train (Bernardo)
+----------------
+
+  * Download the file 'https://shapenet.cs.stanford.edu/media/modelnet40_normal_resampled.zip' and save to 'pointnet2/data'.
+
+  ::
+
+    python pointnet2/train.py task=cls
+
+    # Or with model=msg for multi-scale grouping
+
+    python pointnet2/train.py task=cls model=msg
 
 
 
